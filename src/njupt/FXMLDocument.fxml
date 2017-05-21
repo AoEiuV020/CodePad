@@ -12,12 +12,12 @@
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="New"/>
-                        <MenuItem mnemonicParsing="false" text="Open"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileNewClick" text="New"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileOpenClick" text="Open"/>
                         <MenuItem mnemonicParsing="false" text="Close"/>
                         <SeparatorMenuItem mnemonicParsing="false" text="Data As..."/>
-                        <MenuItem mnemonicParsing="false" text="Save"/>
-                        <MenuItem mnemonicParsing="false" text="Save As..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileSaveClick" text="Save"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onFileSaveAsClick" text="Save As..."/>
                         <SeparatorMenuItem mnemonicParsing="false"/>
                         <MenuItem mnemonicParsing="false" onAction="#onFileQuitClick" text="Quit"/>
                     </items>

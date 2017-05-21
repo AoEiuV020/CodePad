@@ -20,11 +20,16 @@ public class CodePad extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = fxmlLoader.load();
 
         Scene scene = new Scene(root);
 
         stage.setScene(scene);
+
+        FXMLDocumentController controller = fxmlLoader.getController();
+        controller.setStage(stage);
+
         stage.show();
     }
 
