@@ -1,5 +1,7 @@
 package njupt;
 
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
@@ -16,5 +18,10 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+    }
+
+    @FXML
+    private void onFileQuitClick(ActionEvent event) {
+        Platform.exit();
     }
 }
