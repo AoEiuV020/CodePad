@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<!--suppress JavaFxDefaultTag -->
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njupt.FXMLDocumentController">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="567.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.111"
+      fx:controller="njupt.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="New"/>
+                        <MenuItem mnemonicParsing="false" text="Open"/>
+                        <MenuItem mnemonicParsing="false" text="Close"/>
+                        <SeparatorMenuItem mnemonicParsing="false" text="Data As..."/>
+                        <MenuItem mnemonicParsing="false" text="Save"/>
+                        <MenuItem mnemonicParsing="false" text="Save As..."/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Quit"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo"/>
+                        <MenuItem mnemonicParsing="false" text="Redo"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Copy"/>
+                        <MenuItem mnemonicParsing="false" text="Paste"/>
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Find..."/>
+                        <MenuItem mnemonicParsing="false" text="Replace..."/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Insert">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Date"/>
+                        <MenuItem mnemonicParsing="false" text="Date As..."/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Syntax">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Binary"/>
+                        <MenuItem mnemonicParsing="false" text="C/C++"/>
+                        <MenuItem mnemonicParsing="false" text="Java"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Off"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TextArea fx:id="textArea" minHeight="-Infinity" VBox.vgrow="ALWAYS"/>
     </children>
-</AnchorPane>
+</VBox>
