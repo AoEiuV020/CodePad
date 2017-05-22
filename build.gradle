@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
+    testCompile files('lib/junit_4/junit-4.12.jar', 'lib/junit_4/hamcrest-core-1.3.jar')
 }
 
 sourceSets {
