@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -67,6 +68,14 @@ public class FXMLDocumentController implements Initializable {
             alert.show();
         }
         openFile(file);
+    }
+
+    @FXML
+    private void onNotImplementedItemClick(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        String text = ((MenuItem) event.getTarget()).getText();
+        alert.setContentText(text + " not implemented");
+        alert.show();
     }
 
     @FXML

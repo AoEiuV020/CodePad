@@ -14,8 +14,9 @@
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#onFileNewClick" text="New"/>
                         <MenuItem mnemonicParsing="false" onAction="#onFileOpenClick" text="Open"/>
-                        <MenuItem mnemonicParsing="false" text="Close"/>
-                        <SeparatorMenuItem mnemonicParsing="false" text="Data As..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Close"/>
+                        <SeparatorMenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick"
+                                           text="Data As..."/>
                         <MenuItem mnemonicParsing="false" onAction="#onFileSaveClick" text="Save"/>
                         <MenuItem mnemonicParsing="false" onAction="#onFileSaveAsClick" text="Save As..."/>
                         <SeparatorMenuItem mnemonicParsing="false"/>
@@ -24,35 +25,35 @@
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edit">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Undo"/>
-                        <MenuItem mnemonicParsing="false" text="Redo"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Undo"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Redo"/>
                         <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem mnemonicParsing="false" text="Copy"/>
-                        <MenuItem mnemonicParsing="false" text="Paste"/>
-                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Copy"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Paste"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Delete"/>
                         <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem mnemonicParsing="false" text="Find..."/>
-                        <MenuItem mnemonicParsing="false" text="Replace..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Find..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Replace..."/>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Insert">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Date"/>
-                        <MenuItem mnemonicParsing="false" text="Date As..."/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Date"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Date As..."/>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Syntax">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Binary"/>
-                        <MenuItem mnemonicParsing="false" text="C/C++"/>
-                        <MenuItem mnemonicParsing="false" text="Java"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Binary"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="C/C++"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Java"/>
                         <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem mnemonicParsing="false" text="Off"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="Off"/>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="About"/>
+                        <MenuItem mnemonicParsing="false" onAction="#onNotImplementedItemClick" text="About"/>
                     </items>
                 </Menu>
             </menus>
