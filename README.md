@@ -8,5 +8,5 @@
 ②提高要求：在文本编辑时实现复制/粘贴功能；在文本中搜索/替换字符（字符串）；编辑Java或C/C++ 源程序时语法关键字加亮；可打开并对二进制格式的文件进行编辑和保存；在文本中以字符串形式插入当前的日期/时间。  
 
 ## IDE
-支持Intellij, Eclipse, NetBeans, Ant,  
+支持Intellij, Eclipse, NetBeans, Gradle, Ant,  
 后续更新Intellij优先，  

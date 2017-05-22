@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'njupt.CodePad'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+sourceSets {
+    main.java.srcDirs = ['src']
+    main.resources.srcDirs = ['src']
+    test.java.srcDirs = ['test']
+    test.resources.srcDirs = ['test']
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task fatJar(type: Jar, dependsOn: classes) {
+    appendix = 'fat'
+    from sourceSets.main.output
+    from { configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest.attributes(
+      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+      'Main-Class': mainClassName
+    )
+}
+
